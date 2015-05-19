@@ -2160,7 +2160,7 @@
     };
 
     Slick.prototype.swipeHandler = function(event) {
-
+        event.stopPropagation();
         var _ = this;
 
         if ((_.options.swipe === false) || ('ontouchend' in document && _.options.swipe === false)) {
